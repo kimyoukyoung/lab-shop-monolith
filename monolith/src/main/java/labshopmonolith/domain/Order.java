@@ -33,11 +33,14 @@ public class Order {
         // mappings goes here
         MonolithApplication.applicationContext
             .getBean(labshopmonolith.external.InventoryService.class)
-            .decreaseStock(/* get???(), */decreaseStockCommand);
+            .decreaseStock(Long.valueOf(getProductId()), decreaseStockCommand);
 
         OrderPlaced orderPlaced = new OrderPlaced(this);
         orderPlaced.publishAfterCommit();
     }
+
+    @PrePersist
+    public void onPrePersist() {}
 
     public static OrderRepository repository() {
         OrderRepository orderRepository = MonolithApplication.applicationContext.getBean(

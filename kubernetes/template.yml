@@ -43,22 +43,22 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: BoundedContext805
+  name: BoundedContext198
   labels:
-    app: BoundedContext805
+    app: BoundedContext198
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: BoundedContext805
+      app: BoundedContext198
   template:
     metadata:
       labels:
-        app: BoundedContext805
+        app: BoundedContext198
     spec:
       containers:
-        - name: BoundedContext805
-          image: username/BoundedContext805:latest
+        - name: BoundedContext198
+          image: username/BoundedContext198:latest
           ports:
             - containerPort: 8080
           readinessProbe:
@@ -102,13 +102,13 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: BoundedContext805
+  name: BoundedContext198
   labels:
-    app: BoundedContext805
+    app: BoundedContext198
 spec:
   ports:
     - port: 8080
       targetPort: 8080
   selector:
-    app: BoundedContext805
+    app: BoundedContext198
 

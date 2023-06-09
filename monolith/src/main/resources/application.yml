@@ -41,7 +41,7 @@ logging:
 
 api:
   url:
-    BoundedContext805: localhost:8083
+    BoundedContext198: localhost:8083
 
 
 server:
@@ -75,6 +75,6 @@ spring:
 
 api:
   url:
-    BoundedContext805:8080
+    BoundedContext198:8080
 
 
