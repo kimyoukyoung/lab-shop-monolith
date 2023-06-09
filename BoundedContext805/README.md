@@ -1,4 +1,4 @@
-# inventory
+# BoundedContext805
 
 ## Running in local development environment
 
@@ -10,8 +10,8 @@ mvn spring-boot:run
 
 ```
 mvn package -B -DskipTests
-docker build -t username/inventory:v1 .
-docker run username/inventory:v1
+docker build -t username/BoundedContext805:v1 .
+docker run username/BoundedContext805:v1
 ```
 
 ## Push images and running in Kubernetes
@@ -20,15 +20,15 @@ docker run username/inventory:v1
 docker login 
 # in case of docker hub, enter your username and password
 
-docker push username/inventory:v1
+docker push username/BoundedContext805:v1
 ```
 
 Edit the deployment.yaml under the /kubernetes directory:
 ```
     spec:
       containers:
-        - name: inventory
-          image: username/inventory:latest   # change this image name
+        - name: BoundedContext805
+          image: username/BoundedContext805:latest   # change this image name
           ports:
             - containerPort: 8080
 
@@ -41,13 +41,13 @@ kubectl apply -f kubernetes/deployment.yaml
 
 See the pod status:
 ```
-kubectl get pods -l app=inventory
+kubectl get pods -l app=BoundedContext805
 ```
 
 If you have no problem, you can connect to the service by opening a proxy between your local and the kubernetes by using this command:
 ```
 # new terminal
-kubectl port-forward deploy/inventory 8080:8080
+kubectl port-forward deploy/BoundedContext805 8080:8080
 
 # another terminal
 http localhost:8080
@@ -55,7 +55,7 @@ http localhost:8080
 
 If you have any problem on running the pod, you can find the reason by hitting this:
 ```
-kubectl logs -l app=inventory
+kubectl logs -l app=BoundedContext805
 ```
 
 Following problems may be occurred:

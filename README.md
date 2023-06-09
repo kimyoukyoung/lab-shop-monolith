@@ -1,7 +1,7 @@
 # 
 
 ## Model
-www.msaez.io/#/storming/labshopmonolith22
+www.msaez.io/#/storming/labshopmonolith111
 
 ## Before Running Services
 ### Make sure there is a Kafka server running
@@ -21,7 +21,7 @@ cd /bin
 See the README.md files inside the each microservices directory:
 
 - monolith
-- inventory
+- BoundedContext805
 
 
 ## Run API Gateway (Spring Gateway)
@@ -35,7 +35,7 @@ mvn spring-boot:run
 ```
  http :8088/orders id="id" productId="productId" qty="qty" customerId="customerId" amount="amount" 
 ```
-- inventory
+- BoundedContext805
 ```
  http :8088/inventories id="id" stock="stock" 
 ```

@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-@FeignClient(name = "inventory", url = "${api.url.inventory}")
+@FeignClient(name = "BoundedContext805", url = "${api.url.BoundedContext805}")
 public interface InventoryService {
     @RequestMapping(
         method = RequestMethod.PUT,

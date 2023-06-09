@@ -39,9 +39,6 @@ public class Order {
         orderPlaced.publishAfterCommit();
     }
 
-    @PrePersist
-    public void onPrePersist() {}
-
     public static OrderRepository repository() {
         OrderRepository orderRepository = MonolithApplication.applicationContext.getBean(
             OrderRepository.class

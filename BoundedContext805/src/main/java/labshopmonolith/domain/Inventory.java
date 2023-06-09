@@ -3,7 +3,7 @@ package labshopmonolith.domain;
 import java.util.Date;
 import java.util.List;
 import javax.persistence.*;
-import labshopmonolith.InventoryApplication;
+import labshopmonolith.BoundedContext805Application;
 import lombok.Data;
 
 @Entity
@@ -21,7 +21,7 @@ public class Inventory {
     public void onPostPersist() {}
 
     public static InventoryRepository repository() {
-        InventoryRepository inventoryRepository = InventoryApplication.applicationContext.getBean(
+        InventoryRepository inventoryRepository = BoundedContext805Application.applicationContext.getBean(
             InventoryRepository.class
         );
         return inventoryRepository;

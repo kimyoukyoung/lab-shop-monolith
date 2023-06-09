@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>labshopmonolith</groupId>
-	<artifactId>inventory</artifactId>
+	<artifactId>BoundedContext805</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>inventory</name>
+	<name>BoundedContext805</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>

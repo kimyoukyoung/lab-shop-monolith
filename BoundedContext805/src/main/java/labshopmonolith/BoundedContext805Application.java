@@ -10,12 +10,12 @@ import org.springframework.context.ApplicationContext;
 @SpringBootApplication
 @EnableBinding(KafkaProcessor.class)
 @EnableFeignClients
-public class InventoryApplication {
+public class BoundedContext805Application {
 
     public static ApplicationContext applicationContext;
 
     public static void main(String[] args) {
         applicationContext =
-            SpringApplication.run(InventoryApplication.class, args);
+            SpringApplication.run(BoundedContext805Application.class, args);
     }
 }
