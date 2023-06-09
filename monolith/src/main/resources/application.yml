@@ -39,6 +39,10 @@ logging:
     org.hibernate.type: trace
     org.springframework.cloud: debug
 
+api:
+  url:
+    inventory: localhost:8083
+
 
 server:
   port: 8082
@@ -68,5 +72,9 @@ spring:
         event-out:
           destination: labshopmonolith
           contentType: application/json
+
+api:
+  url:
+    inventory:8080
 
 
