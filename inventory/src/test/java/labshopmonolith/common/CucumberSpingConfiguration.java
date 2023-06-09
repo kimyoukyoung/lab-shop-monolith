@@ -1,9 +1,9 @@
 package labshopmonolith.common;
 
 import io.cucumber.spring.CucumberContextConfiguration;
-import labshopmonolith.BoundedContext198Application;
+import labshopmonolith.InventoryApplication;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @CucumberContextConfiguration
-@SpringBootTest(classes = { BoundedContext198Application.class })
+@SpringBootTest(classes = { InventoryApplication.class })
 public class CucumberSpingConfiguration {}

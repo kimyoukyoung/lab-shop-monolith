@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: BoundedContext198
+  name: inventory
   labels:
-    app: BoundedContext198
+    app: inventory
 spec:
   ports:
     - port: 8080
       targetPort: 8080
   selector:
-    app: BoundedContext198
+    app: inventory
