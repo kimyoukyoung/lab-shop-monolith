@@ -6,6 +6,7 @@
         </v-card-title>
 
         <v-card-text>
+            <String label="Id" v-model="value.id" :editMode="editMode"/>
         </v-card-text>
 
         <v-card-actions>
@@ -41,6 +42,7 @@
             value: {},
         }),
         created() {
+            this.value.id = '';
         },
         watch: {
         },
